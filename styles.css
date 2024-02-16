@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    --ff-figtree: "Figtree";
+    --fw-normal: 600;
+    --fw-bold: 800;
+    --clr-yellow: hsl(47, 88%, 63%);
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-grey: hsl(0, 0%, 50%);
+    --clr-black: hsl(0, 0%, 7%);
+}
+
+body {
+    display: flex;
+    background-color: var(--clr-yellow);
+    margin: auto;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: var(--clr-white);
+    border: solid 1px var(--clr-black);
+    border-radius: 20px;
+    box-shadow: 0.5rem 0.5rem var(--clr-black);
+    color: var(--clr-black);
+    max-width: min-content;
+}
+
+.header-image {
+    display: flex;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.header-image img {
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.information {
+    display: inline-block;
+    font-family: var(--ff-figtree);
+}
+
+.label {
+    background-color: var(--clr-yellow);
+    color: var(--clr-black);
+    font-weight: var(--fw-bold);
+    padding: 5px 20px;
+    border-radius: 5px;
+    width: max-content;
+    margin-bottom: 10px;
+}
+
+.date {
+    font-weight: var(--fw-normal);
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+}
+
+.title {
+    font-weight: var(--fw-bold);
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.description {
+    font-weight: var(--fw-normal);
+    color: var(--clr-grey);
+    font-size: 1rem;
+    margin-bottom: 25px;
+}
+
+.author {
+    display: flex;
+    flex-direction: row;
+    font-family: var(--ff-figtree);
+    align-items: center;
+}
+
+
+.author img {
+    width: 45px;
+    margin: auto;
+    padding-right: 10px;
+}
+
+.author-name {
+    font-weight: var(--fw-bold);
+    font-size: 0.9rem;
+}
+
+@media (max-width: 400px) {
+    main {
+        max-width: 300px;
+    }
+
+    .header-image img {
+        max-width: 250px;
+        object-fit: cover;
+    }
+}
